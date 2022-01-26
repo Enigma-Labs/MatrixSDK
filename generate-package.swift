@@ -11,6 +11,9 @@ func packageString(url: String, checksum: String) -> String {
         products: [
             .library(name: "MatrixSDK", targets: ["MatrixSDK"])
         ],
+        dependencies: [
+            .package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver", .upToNextMajor(from: "1.0.0"))
+        ],
         targets: [
             .binaryTarget(name: "MatrixSDK", url: "\(url)", checksum: "\(checksum)")
         ]
