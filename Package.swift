@@ -4,7 +4,6 @@ import PackageDescription
 
 let package = Package(
     name: "MatrixSDK",
-    platforms: [ .iOS(.v14), .macOS(.v10_11) ],
     products: [
         .library(name: "MatrixSDK", targets: ["MatrixSDK"])
     ],
@@ -12,6 +11,6 @@ let package = Package(
         .package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver", .upToNextMajor(from: "1.0.0"))
     ],
     targets: [
-        .binaryTarget(name: "MatrixSDK", url: "https://github.com/Enigma-Labs/MatrixSDK/releases/download/v0.20.6/MatrixSDK.xcframework.zip", checksum: "50503c6a44fe5d2ab1842160b8d312d3bd20c4285d9a75c621a32ebcc2b5ce66")
+        .binaryTarget(name: "MatrixSDK", url: "https://github.com/Enigma-Labs/MatrixSDK/releases/download/v0.21.0/MatrixSDK.xcframework.zip", checksum: "ca8c434d4db376123faf80c3f31ffb002ed8e6c06b96725431257d1b2c227e54")
     ]
 )
