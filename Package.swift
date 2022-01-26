@@ -4,6 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "MatrixSDK",
+    platforms: [ .iOS(.v14), .macOS(.v10_11) ],
     products: [
         .library(name: "MatrixSDK", targets: ["MatrixSDK"])
     ],
